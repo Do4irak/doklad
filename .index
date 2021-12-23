@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Лото - тренажер</title>
+ </head>
+ <body background="https://cdn2.vectorstock.com/i/1000x1000/76/76/forest-and-hills-game-background-2d-application-vector-9827676.jpg">
+ <style>
+body {
+  background-size: cover;
+}
+.button {
+    background-color: #79ff79; /* Green */
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.dragItem {
+    width: 200px;
+    height: 100px;
+    background: #cfef56;
+    border: solid 1px black;
+    text-align: center;
+    margin: 10px;
+    float: left;
+}
+.zone-otvet{
+    position: absolute;
+    background-color: rgba(0,0,0,.7)
+    height: 500px; /* Высота блока */
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    right: 1px;
+}
+table {
+    top: 20px;
+    width: 1250px; /* Ширина таблицы */
+    color: black; /* Цвет текста */
+    border-spacing: 1px; /* Расстояние между ячейками */
+    align: center;
+    margin: auto;
+    background-color: #79ff79;
+}
+td{
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+};
+} /* Поля вокруг текста */
+th{
+    text-align: right;
+}
+.hide{
+    display: none;
+}
+.hovered{
+    background-color: #77dd77;
+}
+.error{
+    background-color: red;
+}
+
+ </style>
+ <button class="button"><a href="/">Назад</a></button>
+ <button class="button"><a href="/rules">Правила игры</a></button>
+<table border="1">
+  <tr>
+      <td id="dropzone" data-zone="1">Синекдоха</td>
+      <td id="dropzone" data-zone="2">Метонимия</td>
+      <td id="dropzone" data-zone="3">Метафора</td>
+      <td id="dropzone" data-zone="4">Сравнение</td>
+      <td id="dropzone" data-zone="5">Эпитет</td>
+  </tr>
+  <tr>
+      <td id="dropzone" data-zone="6">Литота</td>
+      <td id="dropzone" data-zone="7">Гипербола</td>
+      <td id="dropzone" data-zone="8">Олицетворение</td>
+      <td id="dropzone" data-zone="9">Ирония</td>
+      <td id="dropzone" data-zone="10">Аллегория</td>
+  </tr>
+      <td id="dropzone" data-zone="11">Диалектизм</td>
+      <td id="dropzone" data-zone="12">Архаизм</td>
+      <td id="dropzone" data-zone="13">Антонимы</td>
+      <td id="dropzone" data-zone="14">Синонимы</td>
+      <td id="dropzone" data-zone="15">Перифраза</td>
+  <tr>
+  </tr>
+      <td id="dropzone" data-zone="16">Книжная лексика</td>
+      <td id="dropzone" data-zone="17">Фразеологизм</td>
+      <td id="dropzone" data-zone="18">Афоризм</td>
+      <td id="dropzone" data-zone="19">Неологизм</td>
+      <td id="dropzone" data-zone="20">Жаргонизм</td>
+  <tr>
+  </tr>
+</table>
+<div id="dropzone1" class = 'zone-otvet'>
+  <div class="dragItem" draggable="true" data-item="1">это художественный троп, который создается переносом наименования предмета с его части на целое и наоборот.</div>
+  <div class="dragItem" draggable="true" data-item="2">перенос именования с одних предметов или явлений на другие на основе их смежности</div>
+  <div class="dragItem" draggable="true" data-item='3'>оборот речи, состоящий в употреблении слов и выражений в переносном смысле на основе какой-н. аналогии, сравнения.
+</div>
+  <div class="dragItem" draggable="true" data-item='4'>Слово или выражение, содержащее уподобление одного предмета другому.</div>
+  <div class="dragItem" draggable="true" data-item='5'>красочное, образное определение, в котором подчеркивается основное качество описываемого предмета или явления</div>
+  <div class="dragItem" draggable="true" data-item='6'>образное выражение, стилистическая фигура, оборот, в котором содержится художественное преуменьшение.</div>
+  <div class="dragItem" draggable="true" data-item='7'>Поэтический приём чрезмерного преувеличения с целью усиления впечатления.</div>
+  <div class="dragItem" draggable="true" data-item='8'>Воплощение чего-нибудь в образе живого существа.</div>
+  <div class="dragItem" draggable="true" data-item='9'>Тонкая насмешка, выраженная в скрытой форме.</div>
+  <div class="dragItem" draggable="true" data-item='10'>Иносказание, выражение чего-н. отвлечённого, какой-н. мысли, идеи в конкретном образе.</div>
+  <div class="dragItem" draggable="true" data-item='11'>Слово или оборот речи из какого-н. диалекта, употребляемые в литературном языке.</div>
+  <div class="dragItem" draggable="true" data-item='12'>Устарелое слово, оборот речи или грамматическая форма.</div>
+  <div class="dragItem" draggable="true" data-item='13'>слово, противоположное по значению другому слову.</div>
+  <div class="dragItem" draggable="true" data-item='14'>слово, совпадающее или близкое по значению с другим словом.</div>
+  <div class="dragItem" draggable="true" data-item='15'>непрямое художественное описание предмета, который легко узнается по его характерным признакам.</div>
+  <div class="dragItem" draggable="true" data-item='16'>Лексика, связанная с книжными стилями речи</div>
+  <div class="dragItem" draggable="true" data-item='17'>устойчивый оборот речи; идиома</div>
+  <div class="dragItem" draggable="true" data-item='18'>Краткое выразительное изречение.</div>
+  <div class="dragItem" draggable="true" data-item='19'>Новое слово или выражение, а также новое значение старого слова.</div>
+  <div class="dragItem" draggable="true" data-item='20'>слова, используемые определенной группой носителей языка, объединенной социальной сферой употребления.</div>
+</div>
+
+<script>
+const dragItems = document.querySelectorAll(".dragItem");
+const dropZones = document.querySelectorAll("#dropzone");
+const dropZone1 = document.querySelector('#dropzone1')
+
+dropZone1.addEventListener("dragenter", dragEnter)
+dropZone1.addEventListener("dragleave", dragLeave)
+dropZone1.addEventListener("dragover", dragOver)
+dropZone1.addEventListener("drop", Drop)
+
+dragItems.forEach((dragItem) => {
+    dragItem.addEventListener("dragstart", dragStart)
+    dragItem.addEventListener("dragend", dragEnd)
+})
+
+dropZones.forEach((dropZone) =>{
+    dropZone.addEventListener("dragenter", dragEnter)
+    dropZone.addEventListener("dragleave", dragLeave)
+    dropZone.addEventListener("dragover", dragOver)
+    dropZone.addEventListener("drop", Drop)
+})
+
+function dragStart(event){
+    event.dataTransfer.setData('dragItem', this.dataset.item)
+    event.dataTransfer.setData('dropZone', this.dataset.zone)
+    console.log()
+
+}
+function dragEnd(event){
+    console.log()
+}
+
+
+function dragEnter(event){
+    event.preventDefault()
+    this.classList.add("hovered")
+    console.log()
+}
+function dragLeave(event){
+    this.classList.remove('hovered')
+    this.classList.remove('error')
+    console.log()
+}
+function dragOver(event){
+    event.preventDefault()
+}
+function Drop(event){
+    const dragFlag = event.dataTransfer.getData('dragItem')
+    const dragItem = document.querySelector(`[data-item = "${dragFlag}"]`)
+    this.append(dragItem)
+    if (dragItem.dataset.item !== this.dataset.zone){
+        this.classList.add("error")
+    }
+}
+</script>
+ </body>
+</html>
