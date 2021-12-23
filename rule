@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button class="button"><a href="/">Назад</a></button></br>
+<div class="ims">
+    <img src="https://pngimg.com/uploads/paper_sheet/paper_sheet_PNG7249.png" style="width: 95%;" alt="">
+    <h2 style="position:absolute; font-family: 'Twinkle Star', cursive;">В начале игры карточки с терминами разбросаны на странице сайта. Игрок берет фишку и покрывает ею нужную ячейку. При правильном заполнении ячеек на обороте должна сложиться иллюстрация картины известного художника. Таким образом, игрок имеет возможность самостоятельно проверить правильность заполнения карточки.
+</h2>
+</div>
+<style>
+body {
+  margin-top: 1%;
+  background: url(https://cdn2.vectorstock.com/i/1000x1000/76/76/forest-and-hills-game-background-2d-application-vector-9827676.jpg) no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.button {
+    background-color: #79ff79; /* Green */
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+padding:0px 0px 3px 0px;
+margin-top:100px;
+position: absolute;
+top: -20px;
+left: 175px;
+width:50%;
+height: 100%;
+font-size: 25px
+}
+ims{
+margin-top:30px;
+background: green;
+}
+
+div{
+position: relative;
+text-align:center;
+width:700px;
+height: 300px;
+margin:auto;
+}
+</style>
+
+</body>
+</html>
