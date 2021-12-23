@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Название</title>
+</head>
+<body>
+<p><img src="https://i.ibb.co/PhwMmgX/naz.gif" alt="naz" border="0"></p>
+<button class="button"><a href="/first">Играть</a></button>
+<p><button class="button"><a href="/rule">Правила игры</a></button></p>
+
+
+<style>
+body {
+  text-align: center;
+  margin-top: 3%;
+  background: url(https://cdn2.vectorstock.com/i/1000x1000/76/76/forest-and-hills-game-background-2d-application-vector-9827676.jpg) no-repeat;
+  background-size: cover;
+}
+.button {
+  background-color: #79ff79; /* Green */
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  width: 300px;
+  height: 75px;
+  font-size: 30px;
+}
+</style>
+</body>
+</html>
